@@ -152,8 +152,8 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mobile_Center\Mobile_Center.csproj">
-      <Project>{2812e1d9-36ac-4187-921c-433311f9aedf}</Project>
+    <ProjectReference Include="..\MobileCenter\Mobile_Center.csproj">
+      <Project>{4b2f0082-acd3-41f5-9a00-e828f3ce852c}</Project>
       <Name>Mobile_Center</Name>
     </ProjectReference>
   </ItemGroup>
