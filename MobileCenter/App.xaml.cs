@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+using Microsoft.Azure.Mobile.Distribute;
+using Microsoft.Azure.Mobile.Push;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +24,14 @@ namespace Mobile_Center
         protected override void OnStart()
         {
             // Handle when your app starts
+
+            MobileCenter.Start("ios=1f55e7a2-0958-4dc0-ba63-cd0cb9e62988;" +
+                   "uwp={Your UWP App secret here};" +
+                   "android={Your Android App secret here}",
+                   typeof(Analytics), 
+                   typeof(Crashes),
+                   typeof(Distribute),
+                   typeof(Push));
         }
 
         protected override void OnSleep()
