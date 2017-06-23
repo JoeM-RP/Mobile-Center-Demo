@@ -27,7 +27,7 @@ namespace Mobile_Center
 
             MobileCenter.Start("ios=1f55e7a2-0958-4dc0-ba63-cd0cb9e62988;" +
                    "uwp={Your UWP App secret here};" +
-                   "android={Your Android App secret here}",
+                   "android=970c6dac-5e92-4fd7-bbd8-2017d2cb3709",
                    typeof(Analytics), 
                    typeof(Crashes),
                    typeof(Distribute),
