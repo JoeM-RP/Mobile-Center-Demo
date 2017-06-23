@@ -16,12 +16,14 @@ namespace Mobile_Center
 
         void Handle_Clicked(object sender, System.EventArgs e)
         {
-            //throw new NotImplementedException();
-
+            throw new NotImplementedException();
+            /*
+            // You can also track an event with no dictionary
 			Analytics.TrackEvent("Button Clicked", new Dictionary<string, string> {
 				{ "Category", "User" },
                 { "Time", DateTime.UtcNow}
 			});
+			*/
         }
     }
 }
