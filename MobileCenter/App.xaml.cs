@@ -18,7 +18,11 @@ namespace Mobile_Center
         {
             InitializeComponent();
 
-            MainPage = new Mobile_Center.MainPage();
+            var root = new NavigationPage();
+            root.PushAsync(new MainPage());
+
+            MainPage = root;
+
         }
 
         protected override void OnStart()

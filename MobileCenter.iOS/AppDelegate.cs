@@ -22,14 +22,34 @@ namespace Mobile_Center.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            global::Xamarin.Forms.Forms.Init();
+
+			#region Appearance
+			UINavigationBar.Appearance.BarTintColor = UIColor.FromRGB(82,151,214);
+			UINavigationBar.Appearance.SetTitleTextAttributes(new UITextAttributes()
+			{
+				TextColor = UIColor.White
+			});
+			UINavigationBar.Appearance.TintColor = UIColor.White;
+
+			UIBarButtonItem.Appearance.SetTitleTextAttributes(new UITextAttributes()
+			{
+                TextColor = UIColor.Black
+            }, UIControlState.Normal);
+			#endregion
+
+			global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 
-			#if ENABLE_TEST_CLOUD
+#if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
-			#endif
+#endif
 
-            return base.FinishedLaunching(app, options);
+			var result = base.FinishedLaunching(app, options);
+
+            // Set tint for jump list
+            //app.KeyWindow.TintColor = UIColor.Black;
+
+			return result;
         }
     }
 }

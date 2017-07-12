@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Mobile_Center" x:Class="Mobile_Center.MainPage">
-    <StackLayout VerticalOptions="Center" Padding="20">
-        <Label Text="I did it!" HorizontalOptions="Center"/>
-        <Button Text="Event" TextColor="White" BackgroundColor="Gray" Clicked="Handle_Clicked" />
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Mobile_Center" x:Class="Mobile_Center.MainPage" Title="Mobile Center">
+    <StackLayout VerticalOptions="FillAndExpand">
+        <ListView x:Name="MyList" IsGroupingEnabled="true" GroupDisplayBinding="{Binding Key}" GroupShortNameBinding="{Binding Key}" SeparatorVisibility="None"/>
+        <Button Text="Show Actions" TextColor="White" BackgroundColor="#5297d6" Clicked="Handle_Clicked" Margin="10,0,10,10"/>
     </StackLayout>
 </ContentPage>
