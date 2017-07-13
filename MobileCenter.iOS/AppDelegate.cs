@@ -36,12 +36,17 @@ namespace Mobile_Center.iOS
 			{
                 TextColor = UIColor.Black
             }, UIControlState.Normal);
+
 			#endregion
 
 			global::Xamarin.Forms.Forms.Init();
             Distribute.DontCheckForUpdatesInDebug();    // Must be called before "Load Application"
             LoadApplication(new App());
 
+            // The Xamarin Test Cloud Agent must not be present in a release build of a Xamarin.iOS application; 
+            // its presence is grounds for the app to be rejected by Apple.By surrounding the initialization code 
+            // in a conditional compile statement, the Xamarin linker will strip the Xamarin Test Cloud Agent 
+            // from Release builds, but not Debug builds.
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
 #endif
