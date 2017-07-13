@@ -37,16 +37,17 @@ namespace Mobile_Center
             MobileCenter.Start("ios=1f55e7a2-0958-4dc0-ba63-cd0cb9e62988;" +
                    "uwp=7740dc08-60a3-47f0-9eb2-c602815280ad;" +
                    "android=970c6dac-5e92-4fd7-bbd8-2017d2cb3709",
-                   typeof(Analytics), 
-                   typeof(Crashes),
-                   typeof(Distribute));
+                               typeof(Analytics),
+                               typeof(Crashes),
+                               typeof(Distribute),
+                               typeof(Push));
 
         }
 
-		/// <summary>
-		/// Source: https://docs.microsoft.com/en-us/mobile-center/sdk/distribute/xamarin
-		/// </summary>
-		private bool OnReleaseAvailable(ReleaseDetails releaseDetails)
+        /// <summary>
+        /// Source: https://docs.microsoft.com/en-us/mobile-center/sdk/distribute/xamarin
+        /// </summary>
+        private bool OnReleaseAvailable(ReleaseDetails releaseDetails)
         {
             // Look at releaseDetails public properties to get version information, release notes text or release notes URL
             string versionName = releaseDetails.ShortVersion;
