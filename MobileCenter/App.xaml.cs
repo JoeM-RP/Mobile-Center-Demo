@@ -30,12 +30,12 @@ namespace Mobile_Center
             // Handle when your app starts
 
             MobileCenter.Start("ios=1f55e7a2-0958-4dc0-ba63-cd0cb9e62988;" +
-                   "uwp={Your UWP App secret here};" +
+                   "uwp=7740dc08-60a3-47f0-9eb2-c602815280ad;" +
                    "android=970c6dac-5e92-4fd7-bbd8-2017d2cb3709",
                    typeof(Analytics), 
                    typeof(Crashes),
-                   typeof(Distribute),
-                   typeof(Push));
+                   typeof(Distribute));
+
         }
 
         protected override void OnSleep()
