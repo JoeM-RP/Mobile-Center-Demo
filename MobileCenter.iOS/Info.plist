@@ -53,13 +53,13 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleURLTypes</key>
-  <array>
-      <dict>
-          <key>CFBundleURLSchemes</key>
-          <array>
-              <string>mobilecenter-$1f55e7a2-0958-4dc0-ba63-cd0cb9e62988</string>
-          </array>
-      </dict>
-  </array>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>mobilecenter-$1f55e7a2-0958-4dc0-ba63-cd0cb9e62988</string>
+			</array>
+		</dict>
+	</array>
 </dict>
 </plist>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 
 using Foundation;
+using Microsoft.Azure.Mobile.Distribute;
 using UIKit;
 
 namespace Mobile_Center.iOS
@@ -38,6 +39,7 @@ namespace Mobile_Center.iOS
 			#endregion
 
 			global::Xamarin.Forms.Forms.Init();
+            Distribute.DontCheckForUpdatesInDebug();    // Must be called before "Load Application"
             LoadApplication(new App());
 
 #if ENABLE_TEST_CLOUD
@@ -47,7 +49,7 @@ namespace Mobile_Center.iOS
 			var result = base.FinishedLaunching(app, options);
 
             // Set tint for jump list
-            //app.KeyWindow.TintColor = UIColor.Black;
+            app.KeyWindow.TintColor = UIColor.FromRGB(82, 151, 214);
 
 			return result;
         }
