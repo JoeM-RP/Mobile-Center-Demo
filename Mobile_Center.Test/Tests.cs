@@ -30,5 +30,12 @@ namespace Mobile_Center.Test
         {
             app.Screenshot("First screen.");
         }
+
+        [Test]
+        public void ShowsActionSheet()
+        {
+            app.Query("Button_Action");
+            app.Screenshot("Action Sheet");
+        }
     }
 }

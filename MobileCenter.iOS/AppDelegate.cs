@@ -49,7 +49,7 @@ namespace Mobile_Center.iOS
 			var result = base.FinishedLaunching(app, options);
 
             // Set tint for jump list
-            app.KeyWindow.TintColor = UIColor.FromRGB(82, 151, 214);
+            app.KeyWindow.TintColor = UIColor.Black; //UIColor.FromRGB(82, 151, 214);
 
 			return result;
         }

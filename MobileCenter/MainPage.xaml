@@ -2,6 +2,6 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:Mobile_Center" x:Class="Mobile_Center.MainPage" Title="Mobile Center">
     <StackLayout VerticalOptions="FillAndExpand">
         <ListView x:Name="MyList" IsGroupingEnabled="true" GroupDisplayBinding="{Binding Key}" GroupShortNameBinding="{Binding Key}" SeparatorVisibility="None"/>
-        <Button Text="Show Actions" TextColor="White" BackgroundColor="#5297d6" Clicked="Handle_Clicked" Margin="10,0,10,10"/>
+        <Button Text="Show Actions" AutomationId=" Button_Action" TextColor="White" BackgroundColor="#5297d6" Clicked="Handle_Clicked" Margin="10,0,10,10"/>
     </StackLayout>
 </ContentPage>

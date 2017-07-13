@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Mobile_Center.MyPage">
+    <StackLayout Margin="10,20,10,10">
+        <Label Text="I did it!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand"/>
+        <Button Text="Back" AutomationId=" Button_Action" TextColor="White" BackgroundColor="#5297d6" Clicked="Handle_Clicked"/>
+    </StackLayout>
+</ContentPage>

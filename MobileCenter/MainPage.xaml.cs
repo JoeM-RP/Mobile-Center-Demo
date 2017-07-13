@@ -41,18 +41,28 @@ namespace Mobile_Center
             MyList.ItemsSource = result;
         }
 
-        void Handle_Clicked(object sender, System.EventArgs e)
+        async void Handle_Clicked(object sender, System.EventArgs e)
         {
             // You can also track an event with no dictionary
 			Analytics.TrackEvent("Button Clicked", new Dictionary<string, string> {
 				{ "Category", "User" },
-                { "Time", DateTime.UtcNow.ToString()}
+                { "Value", new Random().Next(0,10).ToString()}
 			});
 
-            DisplayActionSheet("Action Sheet", "Cancel", null, new string[]{
+            var action = await DisplayActionSheet("Action Sheet", "Cancel", null, new string[]{
                 "Action 1",
                 "Action 2"
             });
+
+            if(action == "Action 1")
+            {
+                // do something with action 1
+                await Navigation.PushModalAsync(new MyPage());
+            }
+            else if (action  == "Action 2")
+            {
+                // do something with action 2
+            }
         }
     }
 }
