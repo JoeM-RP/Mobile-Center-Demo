@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "941305081429",
+    "firebase_url": "https://mobile-center-demo-46676.firebaseio.com",
+    "project_id": "mobile-center-demo-46676",
+    "storage_bucket": "mobile-center-demo-46676.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941305081429:android:7c91d66b0f4dfb25",
+        "android_client_info": {
+          "package_name": "net.iwritecodesometimes.mobilecenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941305081429-3n42tkcaieenbri14lihige9f2budbhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOezPyY8ZB5ifZYubtTdSoNj-eX2N2g2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
